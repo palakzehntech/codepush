@@ -5,7 +5,7 @@
     <?php
     $conn=mysqli_connect("localhost","root","","crud") or die("connection failed");
 
-    $stu_id =$_GET['id'];
+    $stu_id = $_GET['id'];
    $sql="select * from student  where sid ={$stu_id}";
    $result=mysqli_query($conn,$sql)or die("query unsuccessful");
    
